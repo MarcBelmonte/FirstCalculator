@@ -7,13 +7,90 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnComma"
+        android:id="@+id/btn6"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="6"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+    <Button
+        android:id="@+id/piBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="π"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintStart_toEndOf="@+id/tanBtn"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/tanBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Tan"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.518"
+        tools:layout_editor_absoluteX="168dp" />
+
+    <Button
+        android:id="@+id/cosBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cos"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toStartOf="@+id/tanBtn"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/sinBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sin"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toStartOf="@+id/cosBtn"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/commaBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:text=","
         android:textAppearance="@style/TextAppearance.AppCompat"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/0Btn"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="424dp" />
 
     <Button
@@ -40,15 +117,18 @@
         tools:layout_editor_absoluteX="232dp" />
 
     <Button
-        android:id="@+id/addBtn2"
+        android:id="@+id/equalBtn"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="64dp"
-        android:layout_height="75dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:background="@android:color/holo_green_dark"
         android:text="="
         android:textAppearance="@style/TextAppearance.AppCompat"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="413dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addBtn"
+        tools:layout_editor_absoluteY="283dp" />
 
     <Button
         android:id="@+id/subBtn"
@@ -67,15 +147,14 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="3"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintEnd_toStartOf="@+id/subBtn"
-        app:layout_constraintTop_toBottomOf="@+id/btn6" />
+        tools:layout_editor_absoluteY="352dp" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn4"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -83,23 +162,13 @@
         android:layout_marginTop="8dp"
         android:text="1"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/commaBtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        app:layout_constraintVertical_bias="0.06999999" />
 
     <Button
-        android:id="@+id/btn6"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="6"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintEnd_toStartOf="@+id/multiBtn"
-        app:layout_constraintTop_toBottomOf="@+id/btn9" />
-
-    <Button
-        android:id="@+id/btn6"
+        android:id="@+id/btn5"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -107,11 +176,11 @@
         android:layout_marginTop="8dp"
         android:text="5"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintStart_toEndOf="@+id/btn4"
         app:layout_constraintTop_toBottomOf="@+id/btn8" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn4"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -149,10 +218,11 @@
         android:layout_width="301dp"
         android:layout_height="85dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
         android:id="@+id/btnRad"
@@ -189,14 +259,13 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:text="2"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn6" />
+        app:layout_constraintStart_toEndOf="@+id/btn4"
+        tools:layout_editor_absoluteY="352dp" />
 
     <Button
         android:id="@+id/divBtn"
@@ -208,6 +277,20 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/btn9"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Clear"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divBtn"
         tools:layout_editor_absoluteY="208dp" />
 
     <Button
